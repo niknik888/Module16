@@ -10,10 +10,17 @@ namespace Module16.Tests
     class CalculatorTests
     {
         [Test]
-        public void MultiplicationMustReturnValueNotNull()
+        public void MiltiplicationMustReturnValueNotNull()
         {
             var calculator = new Calculator();
-            Assert.AreEqual(8, calculator.Multiplication(2, 4));
+            Assert.AreEqual(8, calculator.Miltiplication(2, 4));
+
+        }
+        [Test]
+        public void AdditionalMustReturnValueNotNull()
+        {
+            var calculator = new Calculator();
+            Assert.AreEqual(6, calculator.Additional(2, 4));
 
         }
 
